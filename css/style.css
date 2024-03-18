@@ -1,0 +1,169 @@
+
+*{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1a1818;
+}
+legend{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+}
+label{
+    padding-left: 25.2px;
+    font-weight: bold;
+    display: inline-block;
+    
+}
+
+input{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    border-bottom-color: #2f00ff;
+    padding: 0.75em;
+    margin: 0.5em 0 2.5em;
+    color: white;
+    outline: 0;
+
+    width: 600px;
+    padding: 10px;
+    margin: 30px;
+}
+
+textarea{
+    width: 600px;
+    margin-left: 29px;
+    padding: 10px;
+    margin: 30px;
+    resize: none;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid transparent;
+    border-bottom-color: #2f00ff;
+
+    color: white;
+    outline: 0;
+    
+}
+
+button{
+    
+    cursor: pointer;
+    margin-bottom: 10px;
+    margin-left: 29px;
+    color: black;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(253, 253, 253);
+    border: 2px solid transparent;
+}
+
+form{
+    box-shadow: 0px 2px 10px 0px rgb(0, 0, 0);
+    border-radius: 10px;
+    background-color: rgba(53, 53, 53, 0.315);
+}
+
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#informacoesDoUsuario{
+   width: 670px;
+   margin: 10px;
+}
+
+#email1{
+    width: 600px;
+}
+
+
+#contato{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 0 10px 10px 0px;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(53, 53, 53, 0.315);
+    box-shadow: 6px 0px 15px 0px rgb(0, 0, 0);
+}
+
+
+@media screen and (max-width: 1020px){
+
+    #contato{
+        display: none;
+    }
+}
+
+/* Tela Para Tablets */
+@media screen and (max-width: 914px){
+    form{
+        height: 700px;
+        width: 550px;
+    }
+    input{
+        width: 380px;
+    }
+    #email1{
+        width: 380px;
+    }
+    textarea{
+        width: 380px;
+        height: 100px;
+        
+    }
+    legend{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 778px){
+
+    #contato{
+        display: none;
+    }
+}
+
+/* Tela Para Celular */
+@media screen and (max-width: 500px){
+    #contato{
+        display: none;
+    }
+
+    form{
+        width: 400px;
+        height: 600px;
+    }
+    input{
+        width: 300px;
+        margin: 17px;
+        
+    }
+    #email1{
+        width: 300px;
+    }
+    textarea{
+        width: 300px;
+        height: 80px;
+    }
+    button{
+        width: 100px;
+        height: 40px;
+    }
+}
